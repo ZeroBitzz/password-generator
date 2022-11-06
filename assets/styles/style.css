@@ -1,0 +1,139 @@
+/* 
+----------INDEX----------
+BASIC TAGS          [LINE 11]
+FOOTER              [LINE 41]
+MAIN PAGE CONTENT   [LINE 62]
+BREAKPOINTS         [LINE 127]
+ANIMATIONS          [LINE 134]
+*/
+
+
+/* BASIC TAGS */
+* {
+    color: #fa4d67;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    min-width: 700px;
+}
+
+input {
+    background-color: rgb(59, 59, 59);
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+label {
+    font-size: 30px;
+}
+
+span {
+    color: black;
+    font-size: 30px;
+}
+
+
+/* FOOTER */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fa4d67;
+}
+
+footer a {
+    color: black;
+    font-size: 30px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* MAIN PAGE CONTENT */
+#password-creator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: 5px solid;
+    border-right: 5px solid;
+}
+
+#length-input {
+    height: 30px;
+    width: 430px;
+    font-size: 30px;
+}
+
+#submit-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+input[type='checkbox'] {
+    accent-color: #fa4d67;
+}
+
+#password-text {
+    color: #fa4d67;
+    font-size: 40px;
+}
+
+.container {
+    background-color: #404040;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#status-text {
+    color: grey;
+    display: none;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#str-test-link{
+    display: none;
+    text-decoration: none;
+    font-size: 30px;
+    color: #404040;
+    margin-top: 60px;
+    border-radius: 10px;
+    animation: link-animation 3s infinite;
+}
+
+#str-test-link:hover{
+    text-decoration: underline;
+}
+
+/* BREAKPOINTS */
+@media screen and (max-width: 800px){
+    #password-parameters {
+        border: 0px;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes link-animation{
+    0% {color: white;}
+    50% {color: #fa4d67;}
+    100% {color: white;}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>PassGen</title>
+</head>
+<body>
+    <!-- main password creation secion -->
+    <section id="password-creator">
+        <form id="password-form">
+            <h1>Password Settings</h1>
+            <div class="container">
+                <input type="checkbox" id="lowercase-checkbox" class="checkbox">
+                <label for="lowercase-checkbox">Lowercase Values</label>
+                <br>
+            </div>
+
+            <div class="container">
+                <input type="checkbox" id="uppercase-checkbox" class="checkbox">
+                <label for="uppercase-checkbox">Uppercase Values</label>
+                <br>
+            </div>
+
+            <div class="container">
+                <input type="checkbox" id="special-char-checkbox" class="checkbox">
+                <label for="special-char-checkbox">Special Characters</label>
+                <br>
+            </div>
+
+            <div class="container">
+                <input type="checkbox" id="num-val-checkbox" class="checkbox">
+                <label for="num-val-checkbox">Numerical Values</label>
+                <br>
+            </div>
+
+            <div class="container">
+                <span>
+                    <input type="text" id="length-input" placeholder="enter length here - 8min 128max">
+                </span>
+                <br>
+            </div>
+
+            <input type="submit" value="Create Password" id="submit-form">
+             
+            <!-- elements that show up on form submission(see javascript for details) -->
+            <span id="status-text">PASSWORD CREATED AND COPIED</span>
+            <span id="password-text"></span>
+            <a href="https://www.passwordmonster.com/" id="str-test-link" target="_blank">Test your new passwords strength here!</a>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <span>MADE BY BRODERICK</span>
+        <a href="https://brodihowell.dev" target="_blank">GO TO MY WEBSITE</a>
+    </footer>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
