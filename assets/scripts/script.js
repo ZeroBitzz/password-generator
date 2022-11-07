@@ -42,30 +42,19 @@ function createPassword(){
             statusText.style.display = 'flex'
             return 
         }
-        
-        // checks if letters or any unusable characters entered length field
-        if(newPassword === ''){
-            statusText.innerHTML = 'Incorrect value entered for length'
-            statusText.style.display = 'flex'
+        // resizes password element style if length was 40 or more characters long
+        if(newPassword.length >= 40){
+            passwordText.style.fontSize = "15px"
+            passwordText.innerHTML = newPassword
         }else{
-            // resizes password element style if length was 40 or more characters long
-            if(newPassword.length >= 40){
-                passwordText.style.fontSize = "15px"
-                passwordText.innerHTML = newPassword
-            }else{
-                passwordText.style.fontSize = "40px"
-                passwordText.innerHTML = newPassword
-            }
-            statusText.innerHTML = 'Password made and copied to clipboard!'
-            statusText.style.display = 'flex'
-            strTestLink.style.display = 'flex'
-            // copies password to clipboard
-            navigator.clipboard.writeText(newPassword)
+            passwordText.style.fontSize = "40px"
+            passwordText.innerHTML = newPassword
         }
-
-    }else{
-        statusText.innerHTML = 'Incorrect value entered for length'
+        statusText.innerHTML = 'Password made and copied to clipboard!'
         statusText.style.display = 'flex'
+        strTestLink.style.display = 'flex'
+        // copies password to clipboard
+        navigator.clipboard.writeText(newPassword)
     }
 }
 
